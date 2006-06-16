@@ -1,0 +1,6 @@
+category: Perl Doc
+requires: cygwin perl perl-IO-stringy perl-Glib perl-Gtk2 perl-Locale-gettext perl-Pod-Simple
+sdesc: "Gtk2 Perl POD viewer module"
+ldesc: "podviewer provides a simple and attractive way to read Perl's 
+POD documentation. You can use it to read the Perl POD pages, module 
+documentation and information about Perl's builtin functions."
