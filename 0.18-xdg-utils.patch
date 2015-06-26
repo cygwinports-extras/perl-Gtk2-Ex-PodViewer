@@ -1,0 +1,11 @@
+--- origsrc/Gtk2-Ex-PodViewer-0.18/src/podviewer	2005-10-04 06:18:04.000000000 -0500
++++ src/Gtk2-Ex-PodViewer-0.18/src/podviewer	2015-06-26 16:12:21.301187500 -0500
+@@ -55,7 +55,7 @@ if (open(RCFILE, $RCFILE)) {
+ 	close(RCFILE);
+ }
+ 
+-chomp (my $htmlview = `which htmlview 2> /dev/null`);
++chomp (my $htmlview = `which xdg-open 2> /dev/null`);
+ chomp (my $gnome_moz_remote = `which gnome-moz-remote 2> /dev/null`);
+ 
+ my $BROWSER;

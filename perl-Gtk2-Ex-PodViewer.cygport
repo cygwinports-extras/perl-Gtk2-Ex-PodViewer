@@ -3,11 +3,20 @@ inherit perl
 
 NAME="perl-Gtk2-Ex-PodViewer"
 VERSION=0.18
-RELEASE=2
+RELEASE=3
 CATEGORY="Perl"
 SUMMARY="Gtk2 Perl POD viewer module"
 DESCRIPTION="podviewer provides a simple and attractive way to read Perl's
 POD documentation. You can use it to read the Perl POD pages, module
 documentation and information about Perl's builtin functions."
 
+PATCH_URI="0.18-xdg-utils.patch"
+
 ARCH=noarch
+
+src_install() {
+	cd ${B}
+	perl_install
+
+	make_desktop_entry podviewer "Pod Viewer" gtk-dnd "Development"
+}
